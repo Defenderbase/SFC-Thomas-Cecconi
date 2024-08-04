@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Package Deployment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #ffcc01;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #252122;
+        }
+        .highlight {
+            font-size: 1.2em;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Care Package Deployment Form</h1>
+
+        <h2>Donor Information:</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <h2>Special Request:</h2>
+        <label for="items">Are there any religious or spiritual items the soldier might need?</label>
+        <input type="text" id="items" name="items" required><br>
+
+        <label for="quantity">How many soldiers are you sending care packages to?</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br>
+
+        <label for="include_note">Does the soldier have any dietary restrictions or allergies?</label>
+        <select id="include_note" name="include_note" required>
+            <option value="no">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+        
+        <strong>SELECT CARE PACKAGES</strong>
+        <br><em>This directive establishes the mandatory protocol for the selection of care package items within each designated section. Each section is required to select precisely four (4) care items for inclusion in the care packages. The selection must adhere strictly to the following guidelines. Failure to adhere to this directive will result in immediate termination of the section’s participation in the care package application program. Non-compliance will be documented and reported to the Commanding Officer for further administrative action.</em><br>
+
+        <br><label for="edibles"><span style="color:darkred;" class="highlight">SECTION I<br>HIGH-QUALITY EDIBLES</span></label>
+        <select id="edibles1" name="edibles1" required>
+            <option value="no">Select</option>
+            <option value="Canned Spaghetti and Meatballs (15 oz): 100 cans x $1.50 each = $150">Canned Spaghetti and Meatballs (15 oz): 100 cans x $1.50 each = $150</option>
+            <option value="Canned Ravioli (15 oz): 100 cans x $1.50 each = $150">Canned Ravioli (15 oz): 100 cans x $1.50 each = $150</option>
+            <option value="Canned Baked Beans (16 oz): 100 cans x $1.50 each = $150">Canned Baked Beans (16 oz): 100 cans x $1.50 each = $150</option>
+            <option value="Canned Black Beans (15 oz): 100 cans x $1 each = $100">Canned Black Beans (15 oz): 100 cans x $1 each = $100</option>
+            <option value="Canned Pinto Beans (15 oz): 100 cans x $1 each = $100">Canned Pinto Beans (15 oz): 100 cans x $1 each = $100</option>
+        </select><br>
+
+
+        
+        <select id="edibles2" name="edibles2" required>
+            <option value="no">Select</option>
+            <option value="Jerky (Beef, Turkey, etc.) Pack - $25">Jerky (Beef, Turkey, etc.) Pack - $25</option>
+            <option value="Instant Coffee Packets - $60">Instant Coffee Packets - $60</option>
+            <option value="Tea Bags Variety Pack - $55">Tea Bags Variety Pack - $55</option>
+            <option value="Granola Bars (Box of 12) - $20">Granola Bars (Box of 12) - $20</option>
+            <option value="Chocolate Bars (Pack of 6) - $15">Chocolate Bars (Pack of 6) - $15</option>
+        </select><br>
+
+        <select id="edibles3" name="edibles3" required>
+            <option value="no">Select</option>
+            <option value="Canned Beets (15 oz): 67 cans x $1.50 each = $100.50">Canned Beets (15 oz): 67 cans x $1.50 each = $100.50</option>
+            <option value="Canned Pumpkin (15 oz): 50 cans x $2 each = $100">Canned Pumpkin (15 oz): 50 cans x $2 each = $100</option>
+            <option value="Canned Diced Tomatoes (14.5 oz): 100 cans x $1 each = $100">Canned Diced Tomatoes (14.5 oz): 100 cans x $1 each = $100</option>
+            <option value="Canned Soup (Chicken Noodle, 10.5 oz): 100 cans x $1.50 each = $150">Canned Soup (Chicken Noodle, 10.5 oz): 100 cans x $1.50 each = $150</option>
+            <option value="Canned Pineapple Chunks (20 oz): 50 cans x $2 each = $100">Canned Pineapple Chunks (20 oz): 50 cans x $2 each = $100</option>
+        </select><br>
+
+        <select id="edibles4" name="edibles4" required>
+            <option value="no">Select</option>
+            <option value="Nut Butter Squeeze Packs - $25">Nut Butter Squeeze Packs - $25</option>
+            <option value="Popcorn (Microwaveable, Box of 12) - $15">Popcorn (Microwaveable, Box of 12) - $15</option>
+            <option value="Protein Shake Powder - $45">Protein Shake Powder - $45</option>
+            <option value="Electrolyte Drink Mix Packets - $20">Electrolyte Drink Mix Packets - $20</option>
+            <option value="Cookies (Assorted, Box) - $150">Cookies (Assorted, Box) - $150</option>
+        </select><br>
+
+        <label for="kit"><span style="color:darkred;" class="highlight">SECTION II<br>MILITARY EMERGENCY RESPONSE KIT</span></label>
+        <select id="kit1" name="kit1" required>
+            <option value="no">Select</option>
+            <option value="Advanced First Aid Kit - $250">Advanced First Aid Kit - $250</option>
+            <option value="Thermal Blanket - $50">Thermal Blanket - $50</option>
+            <option value="Digital Thermometer - $25">Digital Thermometer - $25</option>
+            <option value="Cold and Flu Medicine Pack - $30">Cold and Flu Medicine Pack - $30</option>
+            <option value="Electrolyte Rehydration Packets - $20">Electrolyte Rehydration Packets - $20</option>
+        </select><br>
+
+        <select id="kit2" name="kit2" required>
+            <option value="no">Select</option>
+            <option value="High-Quality Tissues (Bulk Pack) - $25">High-Quality Tissues (Bulk Pack) - $25</option>
+            <option value="Antibacterial Wipes - $10">Antibacterial Wipes - $10</option>
+            <option value="Portable Humidifier - $40">Portable Humidifier - $40</option>
+            <option value="Heating Pad - $30">Heating Pad - $30</option>
+            <option value="Portable Hand Sanitizer Pack - $25">Portable Hand Sanitizer Pack - $25</option>
+        </select><br>
+
+        <select id="kit3" name="kit3" required>
+            <option value="no">Select</option>
+            <option value="Herbal Tea Variety Pack - $15">Herbal Tea Variety Pack - $15</option>
+            <option value="Healthy Snack Assortment - $50">Healthy Snack Assortment - $50</option>
+            <option value="Portable Power Bank - $45">Portable Power Bank - $45</option>
+            <option value="Emergency Blanket - $10">Emergency Blanket - $10</option>
+            <option value="Digital Thermometer - $25">Digital Thermometer - $25</option>
+        </select><br>
+
+        <select id="kit4" name="kit4" required>
+            <option value="no">Select</option>
+            <option value="Reusable Water Bottle - $20">Reusable Water Bottle - $20</option>
+            <option value="Hydration Tablets - $15">Hydration Tablets - $15</option>
+            <option value="Energy Bars - $35">Energy Bars - $35</option>
+            <option value="First Aid Kit - $50">First Aid Kit - $50</option>
+            <option value="Thermal Blanket - $10">Thermal Blanket - $10</option>
+        </select><br>
+
+        <label for="hygiene"><span style="color:darkred;" class="highlight">SECTION III<br>ESSENTIAL HYGIENE KITS</span></label>
+        <select id="hygiene1" name="hygiene1" required>
+            <option value="no">Select</option>
+            <option value="Travel Toothbrush and Toothpaste Set - $15">Travel Toothbrush and Toothpaste Set - $15</option>
+            <option value="High-Quality Shampoo and Conditioner (Travel Size) - $25">High-Quality Shampoo and Conditioner (Travel Size) - $25</option>
+            <option value="Antibacterial Soap Bars (Pack of 5) - $20">Antibacterial Soap Bars (Pack of 5) - $20</option>
+            <option value="Razor and Shaving Cream Set - $30">Razor and Shaving Cream Set - $30</option>
+            <option value="Deodorant (Pack of 2) - $15">Deodorant (Pack of 2) - $15</option>
+        </select><br>
+
+        <select id="hygiene2" name="hygiene2" required>
+            <option value="no">Select</option>
+            <option value="High-Quality Facial Cleanser (Travel Size) - $25">High-Quality Facial Cleanser (Travel Size) - $25</option>
+            <option value="Moisturizing Lotion (Travel Size) - $30">Moisturizing Lotion (Travel Size) - $30</option>
+            <option value="Lip Balm (Pack of 3) - $10">Lip Balm (Pack of 3) - $10</option>
+            <option value="Disposable Razor Pack - $20">Disposable Razor Pack - $20</option>
+            <option value="Travel Size Hand Sanitizer (Pack of 4) - $15">Travel Size Hand Sanitizer (Pack of 4) - $15</option>
+        </select><br>
+
+        <select id="hygiene3" name="hygiene3" required>
+            <option value="no">Select</option>
+            <option value="Cotton Swabs and Pads (Travel Pack) - $10">Cotton Swabs and Pads (Travel Pack) - $10</option>
+            <option value="High-Quality Body Wash (Travel Size) - $20">High-Quality Body Wash (Travel Size) - $20</option>
+            <option value="Reusable Travel Bottles (Set of 3) - $10">Reusable Travel Bottles (Set of 3) - $10</option>
+            <option value="Essential Toiletries Kit - $50">Essential Toiletries Kit - $50</option>
+            <option value="Nail Care Kit - $15">Nail Care Kit - $15</option>
+        </select><br>
+
+        <select id="hygiene4" name="hygiene4" required>
+            <option value="no">Select</option>
+            <option value="Travel Sewing Kit - $10">Travel Sewing Kit - $10</option>
+            <option value="Hand Sanitizer Wipes (Pack of 20) - $15">Hand Sanitizer Wipes (Pack of 20) - $15</option>
+            <option value="Portable Toothbrush Covers (Set of 2) - $5">Portable Toothbrush Covers (Set of 2) - $5</option>
+            <option value="Travel Hairbrush and Comb Set - $10">Travel Hairbrush and Comb Set - $10</option>
+            <option value="High-Quality Shampoo and Conditioner (Travel Size) - $25">High-Quality Shampoo and Conditioner (Travel Size) - $25</option>
+        </select><br>
+
+
+
+
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById('name').value;
+            var address = document.getElementById('address').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+            var items = document.getElementById('items').value;
+            var quantity = document.getElementById('quantity').value;
+            var include_note = document.getElementById('include_note').value;
+            
+            var edibles1 = document.getElementById('edibles1').value;
+            var edibles2 = document.getElementById('edibles2').value;
+            var edibles3 = document.getElementById('edibles3').value;
+            var edibles4 = document.getElementById('edibles4').value;
+
+            var kit1 = document.getElementById('kit1').value;
+            var kit2 = document.getElementById('kit2').value;
+            var kit3 = document.getElementById('kit3').value;
+            var kit4 = document.getElementById('kit4').value;
+
+            var hygiene1 = document.getElementById('hygiene1').value;
+            var hygiene2 = document.getElementById('hygiene2').value;
+            var hygiene3 = document.getElementById('hygiene3').value;
+            var hygiene4 = document.getElementById('hygiene4').value;
+
+            var hygiene1 = document.getElementById('hygiene1').value;
+            var hygiene2 = document.getElementById('hygiene2').value;
+            var hygiene3 = document.getElementById('hygiene3').value;
+            var hygiene4 = document.getElementById('hygiene4').value;
+            var body = `Name: ${name}\nAddress: ${address}\nPhone Number: ${phone}\nEmail: ${email}\nItems: ${items}\nQuantity: ${quantity}\nInclude Note: ${include_note}\n\n`;
+            
+            body += `Selected Edibles:\n1. ${edibles1}\n2. ${edibles2}\n3. ${edibles3}\n4. ${edibles4}\n\n`;
+            body += `Selected Kits:\n1. ${kit1}\n2. ${kit2}\n3. ${kit3}\n4. ${kit4}\n\n`;
+            body += `Selected Hygiene Kits:\n1. ${hygiene1}\n2. ${hygiene2}\n3. ${hygiene3}\n4. ${hygiene4}\n`;
+            body += `Selected Hygiene Kits:\n1. ${hygiene1}\n2. ${hygiene2}\n3. ${hygiene3}\n4. ${hygiene4}\n`;
+
+            var mailtoLink = `mailto:commandant.army@outlook.com?subject=Care Package Deployment Form&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>
